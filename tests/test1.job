@@ -1,0 +1,17 @@
+job first PARALLEL {
+   echo "Hello, World!"
+} when {
+   echo 'First Condition' 
+}
+
+job second PARALLEL {
+   ls
+} when {
+   echo ‘Second Condition'
+}
+
+wait
+
+job thrid  {
+   echo "Third thing" 
+}
