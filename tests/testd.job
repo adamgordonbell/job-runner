@@ -1,0 +1,5 @@
+job first PARALLEL {
+   echo "Hello, World!"
+} when {
+   echo 'First Condition' 
+}

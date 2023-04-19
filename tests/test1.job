@@ -12,6 +12,6 @@ job second PARALLEL {
 
 wait
 
-job thrid  {
+job third  {
    echo "Third thing" 
 }
