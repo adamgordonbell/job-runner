@@ -1,13 +1,15 @@
 job first PARALLEL {
    echo "Hello, World!"
 } when {
+   sleep 1000 
    echo 'First Condition' 
 }
 
 job second PARALLEL {
    ls
+   sleep 1000
 } when {
-   echo ‘Second Condition'
+   echo 'Second Condition'
 }
 
 wait
