@@ -1,13 +1,21 @@
 job first PARALLEL {
    echo "Hello, World!"
+   sleep 10
 } when {
-   sleep 1000 
    echo 'First Condition' 
 }
 
 job second PARALLEL {
-   ls
-   sleep 1000
+   sleep 1
+   echo "Second thing"
+   sleep 1
+} when {
+   echo 'Second Condition'
+}
+
+job second PARALLEL {
+   echo "third thing"
+   sleep 1
 } when {
    echo 'Second Condition'
 }
@@ -15,5 +23,10 @@ job second PARALLEL {
 wait
 
 job third  {
-   echo "Third thing" 
+   echo "Forth thing" 
+}
+
+job forth  {
+  sdfsdf
+  sfsf 
 }
