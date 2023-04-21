@@ -13,20 +13,14 @@ job second PARALLEL {
    echo 'Second Condition'
 }
 
-job second PARALLEL {
+job third PARALLEL {
    echo "third thing"
    sleep 1
-} when {
-   echo 'Second Condition'
 }
 
 wait
 
-job third  {
-   echo "Forth thing" 
+job last  {
+   echo "Last thing" 
 }
 
-job forth  {
-  sdfsdf
-  sfsf 
-}
